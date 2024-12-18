@@ -1,0 +1,15 @@
+{
+    "restaurants": [
+      {
+        "id": 1,
+        "name": "Le Tangerine",
+        "address": "23 Avenue Mohammed V, Tanger",
+        "phone": "+212 5XX XX XX XX",
+        "email": "contact@letangerine.ma",
+        "cuisine": "Marocaine",
+        "photo": "",
+        "averageRating": 4.5,
+        "website": "www.letangerine.ma"
+      }
+    ]
+  }
