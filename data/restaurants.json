@@ -2,12 +2,12 @@
     "restaurants": [
       {
         "id": 1,
-        "name": "Le Tangerine",
+        "name": "Restaurant Kebdani",
         "address": "23 Avenue Mohammed V, Tanger",
         "phone": "+212 5XX XX XX XX",
         "email": "contact@letangerine.ma",
         "cuisine": "Marocaine",
-        "photo": "",
+        "photo": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/24/e0/71/52/tajine-d-agneau.jpg?w=1000&h=-1&s=1",
         "averageRating": 4.5,
         "website": "www.letangerine.ma"
       }

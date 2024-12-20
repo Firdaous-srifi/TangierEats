@@ -3,10 +3,186 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tangier Restaurants</title>
+    <title>TangierEats</title>
+    <link rel="icon" type="image/x-icon" href="/photos/TangierEatsLogo.png">
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
+    <header class="header">
+        <nav>
+          <div class="nav__header">
+            <div class="nav__logo">
+              <a href="#">
+                <img
+                  src="/photos/TangierEatsLogo.png"
+                  alt="logo"
+                  class="nav__logo-dark"
+                />
+                
+              </a>
+              <p>TangierEats</p>
+            </div>
+            <div class="nav__menu__btn" id="menu-btn">
+              <i class="ri-menu-line"></i>
+            </div>
+          </div>
+          <ul class="nav__links" id="nav-links">
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#restaurants">RESTAURANTS</a></li>
+            <li><a href="#event">EVENTS</a></li>
+            <li><a href="#contact">CONTACT US</a></li>
+            
+            
+          </ul>
+        </nav>
+        <div class="section__container header__container" id="home">
+          <div class="header__image">
+            <img src="/photos/headerimg.png" alt="header" />
+          </div>
+          <div class="header__content">
+            
+            <h1>FIND YOUR<br /><span>RESTAURANT</span></h1>
+            <!--search button-->
+        <div id="poda">
+        <div class="glow"></div>
+        <div class="darkBorderBg"></div>
+        <div class="darkBorderBg"></div>
+        <div class="darkBorderBg"></div>
+
+        <div class="white"></div>
+
+        <div class="border"></div>
+
+        <div id="main">
+            <input placeholder="Search..." type="text" name="text" class="input" />
+            <div id="input-mask"></div>
+            <div id="pink-mask"></div>
+            <div class="filterBorder"></div>
+            <div id="filter-icon">
+            <svg
+                preserveAspectRatio="none"
+                height="27"
+                width="27"
+                viewBox="4.8 4.56 14.832 15.408"
+                fill="none"
+            >
+                <path
+                d="M8.16 6.65002H15.83C16.47 6.65002 16.99 7.17002 16.99 7.81002V9.09002C16.99 9.56002 16.7 10.14 16.41 10.43L13.91 12.64C13.56 12.93 13.33 13.51 13.33 13.98V16.48C13.33 16.83 13.1 17.29 12.81 17.47L12 17.98C11.24 18.45 10.2 17.92 10.2 16.99V13.91C10.2 13.5 9.97 12.98 9.73 12.69L7.52 10.36C7.23 10.08 7 9.55002 7 9.20002V7.87002C7 7.17002 7.52 6.65002 8.16 6.65002Z"
+                stroke="#d6d6e6"
+                stroke-width="1"
+                stroke-miterlimit="10"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                ></path>
+            </svg>
+            </div>
+            <div id="search-icon">
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke-linejoin="round"
+                stroke-linecap="round"
+                height="24"
+                fill="none"
+                class="feather feather-search"
+            >
+                <circle stroke="url(#search)" r="8" cy="11" cx="11"></circle>
+                <line
+                stroke="url(#searchl)"
+                y2="16.65"
+                y1="22"
+                x2="16.65"
+                x1="22"
+                ></line>
+                <defs>
+                <linearGradient gradientTransform="rotate(50)" id="search">
+                    <stop stop-color="#f8e7f8" offset="0%"></stop>
+                    <stop stop-color="#b6a9b7" offset="50%"></stop>
+                </linearGradient>
+                <linearGradient id="searchl">
+                    <stop stop-color="#b6a9b7" offset="0%"></stop>
+                    <stop stop-color="#837484" offset="50%"></stop>
+                </linearGradient>
+                </defs>
+            </svg>
+            </div>
+        </div>
+        </div>
+          </div>
+        </div>
+      </header>
+      <!--sections cards-->
+      <section>
+        <div class="card-container">
+            <a href="/" class="hero-image-container">
+              <img class="hero-image" src="/photos/r1.png" alt="Spinning glass cube"/>
+            </a>
+            <main class="main-content">
+              <h1><a href="#">Restaurant Kebdani</a></h1>
+              <p>Moroccan, Mediterranean</p>
+              <div class="flex-row">
+                <div class="coin-base">
+                  <img src="https://i.postimg.cc/T1F1K0bW/Ethereum.png" alt="Ethereum" class="small-image"/>
+                  <h2>0.041 ETH</h2>
+                </div>
+                <div class="time-left">
+                  <img src="https://i.postimg.cc/prpyV4mH/clock-selection-no-bg.png" alt="clock" class="small-image"/>
+                  <p>3 days left</p>
+                </div>
+              </div>
+            </main>
+            <div class="card-attribute">
+              <img src="https://i.postimg.cc/SQBzNQf1/image-avatar.png" alt="avatar" class="small-avatar"/>
+              <p>Creation of <span><a href="#">Jules Wyvern</a></span></p>
+            </div>
+          </div>
+      </div>
+      </section>
+
+      <footer class="footer">
+        <div class="section__container footer__container">
+          <div class="footer__logo">
+            <img src="/photos/TangierEatsLogo.png" alt="logo" />
+            <p>TangierEats</p>
+          </div>
+          <div class="footer__content">
+            <p>
+              Welcome to Tangier Eats, where passion for exceptional food and
+              genuine hospitality come together.rate and find tangier restaurants as you wish to.
+            </p>
+            <div>
+              <ul class="footer__links">
+                <li>
+                  <span><i class="ri-map-pin-2-fill"></i></span>
+                  Tangier, Berchifa akhawadyali, 90000
+                </li>
+                <li>
+                  <span><i class="ri-mail-fill"></i></span>
+                  info@burgerhouse.com
+                </li>
+              </ul>
+              <div class="footer__socials">
+                <a href="#"><i class="ri-facebook-circle-fill"></i></a>
+                <a href="#"><i class="ri-instagram-fill"></i></a>
+                <a href="#"><i class="ri-twitter-fill"></i></a>
+                <a href="#"><i class="ri-whatsapp-fill"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bar">
+          Copyright © 2024 bt Firdaous. All rights reserved.
+        </div>
+      </footer>
+
+      
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script src="api/server.js"></script>
 </body>
 </html>
