@@ -652,8 +652,12 @@ div.flex-row {
     justify-content: space-between;
     align-items: center;
 }
+.level {
+  color: rgb(230, 204, 89);
+}
 
-div.coin-base, .time-left, .card-attribute {
+
+div.time-left, .card-attribute {
     display: flex;
     align-items: center;
     padding: 1em 0;
