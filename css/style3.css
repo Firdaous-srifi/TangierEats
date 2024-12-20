@@ -1,0 +1,225 @@
+:root {
+    --yellow: #f8c238;
+    --darknavy-color: #0A3981;
+    --navy-color: #1F509A;
+    --ocean-blue: #D4EBF8;
+    --white: #ffffff;
+    --black: #000000;
+    --max-width: 1210px;
+    --danger: #dc3545;
+    --success: #28a745;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--var-main-darkest);
+    color: var(--white);
+}
+
+.header {
+    background-color: var(--darknavy-color);
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header nav {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header a {
+    text-decoration: none;
+    color: var(--white);
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.2rem;
+}
+
+.container {
+    max-width: var(--max-width);
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.admin-panel {
+    background-color: var(--var-card-dark);
+    border-radius: 10px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.panel-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+h1 {
+    font-family: 'Alfa Slab One', serif;
+    color: var(--yellow);
+}
+
+.search-bar {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.search-bar input {
+    flex: 1;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--navy-color);
+    color: var(--white);
+}
+
+.search-bar input::placeholder {
+    color: var(--ocean-blue);
+}
+
+.btn {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1rem;
+    transition: transform 0.2s;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+.btn-primary {
+    background-color: var(--yellow);
+    color: var(--darknavy-color);
+}
+
+.btn-danger {
+    background-color: var(--danger);
+    color: var(--white);
+}
+
+.restaurants-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 2rem;
+}
+
+.restaurants-table th,
+.restaurants-table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid var(--navy-color);
+}
+
+.restaurants-table th {
+    background-color: var(--darknavy-color);
+    color: var(--yellow);
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.restaurants-table tr:hover {
+    background-color: rgba(31, 80, 154, 0.3);
+}
+
+.action-buttons {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+}
+
+.modal-content {
+    position: relative;
+    background-color: var(--var-card-dark);
+    margin: 5% auto;
+    padding: 2rem;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+.close-modal {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--white);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--yellow);
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid var(--navy-color);
+    border-radius: 5px;
+    background-color: var(--navy-color);
+    color: var(--white);
+}
+
+.notification {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+    color: var(--white);
+    z-index: 1001;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.notification.success {
+    background-color: var(--success);
+}
+
+.notification.error {
+    background-color: var(--danger);
+}
+
+@media (max-width: 768px) {
+    .search-bar {
+        flex-direction: column;
+    }
+    
+    .restaurants-table {
+        display: block;
+        overflow-x: auto;
+    }
+}
