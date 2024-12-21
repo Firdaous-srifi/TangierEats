@@ -66,10 +66,11 @@
 // });
 
 //////////////////////////////////////////
-const booksContainer = document.getElementById("section-container");
 
-//***fetchiiing */
-function fetchAndDisplayBooks() {
+const restaurantsContainer = document.getElementById("section-container");
+
+//****** Fetching and Displaying Restaurants ******/
+function fetchAndDisplayRestaurants() {
   fetch("data/restaurants.json")
     .then((response) => {
       if (!response.ok) {
@@ -78,42 +79,45 @@ function fetchAndDisplayBooks() {
       return response.json();
     })
     .then((data) => {
-      displayBooks(data);
+      displayRestaurants(data.restaurants); // Assuming JSON data has a `restaurants` key
     })
     .catch((error) => {
       console.error(error);
     });
 }
 
+//************ FUNCTION: displayRestaurants ***************//
+function displayRestaurants(restaurants) {
+  restaurantsContainer.innerHTML = ""; // Clear the container
 
-////************FUNCTION displayBooks ***************/
-function displayBooks(books) {
-  booksContainer.innerHTML = "";
+  restaurants.forEach((restaurant) => {
+    let restaurantItem = document.createElement("div");
+    restaurantItem.classList.add("restaurant-card");
 
-  books.forEach((book, i) => {
-    let bookItem = document.createElement("li");
-    bookItem.innerHTML = `
+    restaurantItem.innerHTML = `
       <div class="product-card">
-          <span class="card-badge">New</span>
-          <div class="card-banner img-holder" style="--width: 384; --height: 480;">
-              <img src="${book.cover}" width="384" height="480" loading="lazy" class="img-cover">
-              <div class="card-action">
-                  <a href="details.html?id=${i}" class="action-btn details" aria-label="Quick View" title="Quick View">
-                      <ion-icon name="eye-outline" aria-hidden="true"></ion-icon>
-                  </a>
-                  <button class="action-btn wishlist" aria-label="Add to Wishlist" title="Add to Wishlist" onclick="addToWishlist(${i})">
-                      <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
-                  </button>
-              </div>
-          </div>
-          <br>
-          <div class="card-content">
-              <h2 class="card-title h3">${book.title}</h2>
-              <h2 class="book-author">${book.author?.fullname || "Unknown Author"}</h2>
-          </div>
-      </div>`;
-    booksContainer.appendChild(bookItem);
+        <div class="card-banner">
+          <img src="${restaurant.image}" alt="${restaurant.name}" class="img-cover" />
+        </div>
+        <div class="card-content">
+          <h2 class="restaurant-name">${restaurant.name}</h2>
+          <p class="restaurant-cuisine">${restaurant.cuisine}</p>
+          <p class="restaurant-address">${restaurant.address}</p>
+          <p class="restaurant-phone">📞 ${restaurant.phone}</p>
+          <p class="restaurant-email">✉️ <a href="mailto:${restaurant.email}">${restaurant.email}</a></p>
+          <p class="restaurant-website">🌐 <a href="${restaurant.website}" target="_blank">${restaurant.website}</a></p>
+          <p class="restaurant-rating">⭐ ${restaurant.rating} / 5</p>
+          <p class="restaurant-hours">🕒 ${restaurant.hours}</p>
+          <p class="restaurant-price">💰 ${restaurant.priceRange}</p>
+          <p class="restaurant-features">✨ ${restaurant.specialFeatures.join(", ")}</p>
+        </div>
+      </div>
+    `;
+    restaurantsContainer.appendChild(restaurantItem);
   });
 
-  window.books = books; // Save books globally
+  window.restaurants = restaurants; // Save restaurants globally
 }
+
+// Initialize the fetching process
+fetchAndDisplayRestaurants();
