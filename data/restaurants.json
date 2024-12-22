@@ -9,9 +9,9 @@
       "email": "contact@eldorado-tanger.com",
       "website": "https://www.eldorado-tanger.com",
       "image": "/images/eldorado.jpg",
-      "rating": 4.5,
+      "rating": 3,
       "hours": "12:00 - 23:00",
-      "isOpen": true,
+      "isOpen": false,
       "priceRange": "₱₱ - ₱₱₱",
       "specialFeatures": ["Reservations", "Outdoor Seating", "Seating", "Serves Alcohol", "Table Service", "Accepts Credit Cards"]
     },
@@ -89,66 +89,6 @@
       "isOpen": true,
       "priceRange": "₱₱ - ₱₱₱",
       "specialFeatures": ["Takeout", "Reservations", "Seating", "Table Service"]
-    },
-    {
-      "id": 7,
-      "name": "El Morocco Club",
-      "cuisine": "Mediterranean, European, Moroccan",
-      "address": "Rue Riad Sultan, Tangier 90000 Morocco",
-      "phone": "+212 539-37-2104",
-      "email": "info@elmoroccoclub.ma",
-      "website": "http://www.elmoroccoclub.ma",
-      "image": "/images/morocco-club.jpg",
-      "rating": 4.5,
-      "hours": "19:00 - 02:00",
-      "isOpen": false,
-      "priceRange": "₱₱₱₱",
-      "specialFeatures": ["Reservations", "Seating", "Serves Alcohol", "Table Service", "Live Music"]
-    },
-    {
-      "id": 8,
-      "name": "La Fabrique",
-      "cuisine": "French, Mediterranean, European",
-      "address": "Rue Khalid Ibn Oualid, Tangier 90000 Morocco",
-      "phone": "+212 539-37-2585",
-      "email": "contact@lafabrique-tanger.com",
-      "website": null,
-      "image": "/images/la-fabrique.jpg",
-      "rating": 4.5,
-      "hours": "12:00 - 15:00, 19:00 - 23:00",
-      "isOpen": true,
-      "priceRange": "₱₱ - ₱₱₱",
-      "specialFeatures": ["Reservations", "Outdoor Seating", "Seating", "Serves Alcohol", "Table Service"]
-    },
-    {
-      "id": 9,
-      "name": "Dar Naji",
-      "cuisine": "Moroccan, Mediterranean, Healthy",
-      "address": "Avenue des FAR, Tangier 90000 Morocco",
-      "phone": "+212 539-94-8139",
-      "email": null,
-      "website": null,
-      "image": "/images/dar-naji.jpg",
-      "rating": 4,
-      "hours": "11:00 - 23:00",
-      "isOpen": true,
-      "priceRange": "₱₱ - ₱₱₱",
-      "specialFeatures": ["Takeout", "Seating", "Table Service"]
-    },
-    {
-      "id": 10,
-      "name": "Restaurant El Korsan",
-      "cuisine": "Moroccan, Mediterranean, International",
-      "address": "Avenue Mohamed VI, Tangier 90000 Morocco",
-      "phone": "+212 539-93-9000",
-      "email": "elkorsan@movenpick.com",
-      "website": null,
-      "image": "/images/el-korsan.jpg",
-      "rating": 4.5,
-      "hours": "12:30 - 15:30, 19:00 - 23:00",
-      "isOpen": true,
-      "priceRange": "₱₱₱₱",
-      "specialFeatures": ["Reservations", "Private Dining", "Seating", "Parking Available", "Valet Parking", "Serves Alcohol", "Table Service"]
     }
   ]
 }
