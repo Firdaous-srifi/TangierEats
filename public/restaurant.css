@@ -1,0 +1,275 @@
+:root {
+    --yellow: #f8c238;
+    --darknavy-color: #0A3981;
+    --navy-color: #1F509A;
+    --ocean-blue: #D4EBF8;
+    --white: #ffffff;
+    --black: #000000;
+    --max-width: 1210px;
+    --curve: 40;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Red Hat Text', sans-serif;
+    background: linear-gradient(135deg, var(--navy-color), var(--darknavy-color));
+    color: var(--white);
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+.container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.cards-details {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 800px;
+    width: 100%;
+}
+
+.card img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.infos {
+    padding: 2rem;
+}
+
+.card-content {
+    margin-bottom: 2rem;
+}
+
+.name {
+    color: var(--yellow);
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.notation {
+    color: var(--yellow);
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.phone {
+    display: block;
+    margin-top: 1rem;
+    font-size: 1.1rem;
+}
+
+.card-actions {
+    margin-top: 2rem;
+}
+
+.card-actions a {
+    display: inline-block;
+    background-color: var(--yellow);
+    color: var(--darknavy-color);
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.card-actions a:hover {
+    background-color: #e5b02f;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+    
+    .card {
+        margin: 1rem;
+    }
+    
+    .card img {
+        height: 300px;
+    }
+    
+    .name {
+        font-size: 2rem;
+    }
+}
+
+/*** Global CSS ***/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Red Hat Text", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.container {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 30px;
+}
+
+/*** header ***/
+
+header {
+    background-color: #194bd2c9;
+    height: 80px;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+header input {
+    width: 400px;
+    padding: 13px;
+    padding-left: 20px;
+    border-radius: 5px;
+    font-size: 15px;
+    border: none;
+    outline: none;
+}
+
+header .search-container {
+    position: relative;
+}
+
+header .search-container i {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    padding: 15px;
+    font-size: 22px;
+    transform: translateY(-50%);
+    color: black;
+}
+
+/*** table ***/
+
+.restaurant-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-family: 'Arial', sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.restaurant-table th, .restaurant-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+.restaurant-table th {
+    background-color: #f4f4f4;
+    color: #333;
+    font-weight: bold;
+}
+
+.restaurant-table .cuisine {
+    width: 300px;
+}
+
+.restaurant-table tbody tr:hover {
+    background-color: #f1f1f1;
+    transition: background-color 0.3s ease;
+}
+
+.restaurant-table td img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.restaurant-table .btns button {
+    padding: 8px 15px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.add {
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 15px;
+    margin: 5px 5px 30px 5px;
+    float: right;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.add:hover {
+    background-color: #409144;
+}
+
+.restaurant-table .delete {
+    background-color: #f44336;
+    color: white;
+}
+
+.restaurant-table .delete:hover {
+    background-color: #da190b;
+}
+
+.restaurant-table .details-card {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.restaurant-table .details-card:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .restaurant-table th, .restaurant-table td {
+        padding: 8px;
+    }
+
+    .restaurant-table td img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .restaurant-table .btns button {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+}
