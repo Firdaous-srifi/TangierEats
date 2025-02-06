@@ -17,7 +17,7 @@
 
 body {
     font-family: 'Red Hat Text', sans-serif;
-    background: linear-gradient(135deg, var(--navy-color), var(--darknavy-color));
+    background: linear-gradient(135deg, var(--navy-color), var(--ocean-blue));
     color: var(--white);
     min-height: 100vh;
     padding: 2rem;
@@ -140,7 +140,7 @@ body {
 /*** header ***/
 
 header {
-    background-color: #194bd2c9;
+    
     height: 80px;
     padding: 30px;
     display: flex;
@@ -171,6 +171,7 @@ header .search-container i {
     font-size: 22px;
     transform: translateY(-50%);
     color: black;
+    
 }
 
 /*** table ***/
@@ -181,12 +182,15 @@ header .search-container i {
     margin: 20px 0;
     font-family: 'Arial', sans-serif;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+    
 }
 
 .restaurant-table th, .restaurant-table td {
     padding: 12px 15px;
     border-bottom: 1px solid #ddd;
     text-align: center;
+    
 }
 
 .restaurant-table th {
@@ -200,7 +204,7 @@ header .search-container i {
 }
 
 .restaurant-table tbody tr:hover {
-    background-color: #f1f1f1;
+    background-color: var(--yellow);
     transition: background-color 0.3s ease;
 }
 

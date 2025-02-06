@@ -7,9 +7,11 @@
     --ocean-blue: #D4EBF8;
     --white: #ffffff;
     --black: #000000;
-    --max-width: 1210px;
+    
     --danger: #dc3545;
     --success: #28a745;
+
+    --max-width: 1210px;
 }
 
 * {
@@ -20,7 +22,7 @@
 
 body {
     font-family: 'Outfit', sans-serif;
-    background-color: var(--var-main-darkest);
+    background-color: var(--darknavy-color);
     color: var(--white);
 }
 
